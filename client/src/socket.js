@@ -1,6 +1,5 @@
-import { io } from 'socket.io-client';
+import {io} from 'socket.io-client'
 
-// "undefined" means the URL will be computed from the `window.location` object
-export const URL = process.env.NODE_ENV === 'production' ? undefined : 'http://localhost:4000';
+export const URL = 'http://localhost:4545'
 
-export const socket = io.connect(URL);
+export const socket = io.connect(URL)
